@@ -56,7 +56,7 @@ const JobCard = ({ job }) => { // Removed type annotation
     const salaryString = job.salary ? formatSalary(job.salary) : '';
 
     return (
-        <div className="h-[24rem] bg-slate-50 text-slate-800 rounded-xl shadow-lg p-5 flex flex-col font-sans transition-transform hover:scale-[1.02] hover:shadow-cyan-500/20">
+        <div className="min-h-[24rem] bg-slate-50 text-slate-800 rounded-xl shadow-lg p-5 flex flex-col font-sans transition-transform hover:scale-[1.02] hover:shadow-cyan-500/20">
             <div className="flex-grow space-y-3">
                 {/* Header */}
                 <div className="flex justify-between items-start">

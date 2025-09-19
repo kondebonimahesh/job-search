@@ -6,7 +6,7 @@ import { Pagination } from './Pagination';
 
 // Removed interface OutputPanelProps
 
-const PAGE_SIZE = 12;
+
 
 const SkeletonLoader = () => ( // Removed : React.FC
     <div className="grid gap-6 grid-cols-1 md:grid-cols-2 xl:grid-cols-3 animate-pulse">

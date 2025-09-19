@@ -6,7 +6,7 @@ import { OutputPanel } from './components/OutputPanel';
 import { ControlsPanel } from './components/ControlsPanel';
 import { FireIcon } from './components/icons/FireIcon';
 
-const PAGE_SIZE = 12;
+const PAGE_SIZE = 20;
 
 // Helper to parse strings like "5h ago", "2 days ago" into hours for sorting
 const parseRelativeDate = (dateStr) => { // Removed type annotation
@@ -64,7 +64,7 @@ const App = () => { // Removed React.FC
 
     try {
       const data = await findJobs(query, page, PAGE_SIZE);
-      setFoundJobs(data);
+      setFoundJobs(prevJobs => (page === 1 ? data : [...(prevJobs || []), ...data]));
       setCurrentPage(page);
       setIsLastPage(data.length < PAGE_SIZE);
     } catch (e) { // Removed : unknown
