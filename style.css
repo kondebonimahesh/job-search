@@ -5,6 +5,13 @@ body {
     color: #f1f5f9;
 }
 
+#root {
+    transform: scale(0.8);
+    transform-origin: top left;
+    width: 125%;
+    height: 125%;
+}
+
 .container {
     max-width: 1280px;
     margin: 0 auto;
