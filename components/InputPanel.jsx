@@ -24,7 +24,7 @@ export const InputPanel = ({ query, setQuery, handleSearch, isLoading }) => { //
                     value={query}
                     onChange={(e) => setQuery(e.target.value)}
                     onKeyDown={handleKeyDown}
-                    placeholder="e.g., 'Software Engineer in London'"
+                    placeholder="... 'Software Engineer in India'"
                     className="w-full p-3 bg-slate-700 text-slate-200 placeholder-slate-400 rounded-md focus:ring-2 focus:ring-cyan-500 focus:outline-none transition-shadow"
                     disabled={isLoading}
                     aria-label="Job search input"
